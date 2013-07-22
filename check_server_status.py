@@ -139,7 +139,6 @@ def server_main_thread(serverGroupName, propMap, printLock):
 
     with printLock:
         print output
-        pass
         
 
 
