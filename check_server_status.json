@@ -1,0 +1,38 @@
+{
+    "serverGroup1": 
+        {
+            "hostnamePrefix": "server1",
+            "lowerrange": 100, 
+            "upperrange": 103,
+            "versionCommand": "cat /apps/server1/build_version.file",
+            "psGrepCommand": "Dserver1.instanceid",
+            "processName": "multiple:-Dserver1.instanceid"
+        }, 
+    "serverGroup2":
+        {
+            "hostnamePrefix": "server2",
+            "lowerrange": 100, 
+            "upperrange": 103,
+            "versionCommand": "cat /apps/server2/build_version.file",
+            "psGrepCommand": "Bootstrap",
+            "processName": "single:server2"
+        },
+    "serverGroup3":
+        {
+            "hostnamePrefix": "server3",
+            "lowerrange": 100, 
+            "upperrange": 105,
+            "versionCommand": "cat /apps/server3/build_version.file",
+            "psGrepCommand": "Bootstrap",       
+            "processName": "single:server3"
+        },
+    "serverGroup4":
+        {
+            "hostnamePrefix": "server4",
+            "lowerrange": 100, 
+            "upperrange": 100,
+            "versionCommand": "cat /apps/server4/build_version.file",
+            "psGrepCommand": "myprocess",     
+            "processName": "single:server4"
+        }
+}        
